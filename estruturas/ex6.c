@@ -13,6 +13,7 @@ int main()
   struct Aluno aluno[5];
   int k = 0;
   int vetorNota[15];
+  int mediaAlunos[5];
 
   for (int i = 0; i < 5; i++)
   {
@@ -32,10 +33,10 @@ int main()
 
       vetorNota[k] = aluno[i].notas[j];
       k++;
-    }
-  }
 
-  for (int i = 0; i < 15; i++){
-    printf("%d \n", vetorNota[i]);
+      float somaNotas = 0;
+
+      somaNotas += aluno[i].notas[j] / 3;
+    }
   }
 }
